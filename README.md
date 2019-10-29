@@ -2,10 +2,11 @@
 
 Created on: `29/10/19`
 
-# Olympics Data (1896-2016) Exploration
-## By Shuaib Ahmed
+***
+### Project Title
 
-
+**Olympics Data (1896-2016) Exploration**
+***
 ## Dataset
 
 This is a Historical dataset on the modern Olympic Games, including all the Games from Athens 1896 to Rio 2016. These include basic biographical data on athletes (Age, Height, Sex and Weight) and medal results. Both Seasons, Summer and Winter, are included.
