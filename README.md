@@ -44,7 +44,7 @@ Taking the cleaned dataset **olympics-master.csv**, these are the columns that w
 
 ## Summary of Findings
 
-___Univariate exploration___
+___Univariate Exploration___
 
 Starting from my univariate exploration, the Weight variable took on a large range of values (25-214 kg).
 
@@ -52,7 +52,7 @@ Starting from my univariate exploration, the Weight variable took on a large ran
 * Most athletes are grouped in the weight range of around 60-75 Kg.
 * There were upper limit outliers for Weight, but I had taken this into consideration as not being erroneous, given explosive sports that tended to have athletes weighing well above the average for their respective events. Hence, the log transformation as above was enough to alleviate this issue.
 
-___Bivariate exploration___
+___Bivariate Exploration___
 
 Additionally, through my bivariate exploration, upon visualising a fitted scatter/regression plot (`regplot`), I found that:
 * the conventional positive correlation between Weight and Height is also observed among Olympic athletes, with a correlation coefficient of 0.8 that is also made to fit more linearly via a logarithmic scale for Weight.
@@ -66,7 +66,7 @@ Additionally, through my bivariate exploration, upon visualising a fitted scatte
     * Winter Olympics - This trend was not as clear for the Winter version (relative to Summer), but had a similar early advantage between 1928-1948 and afterwards tapered off, where only in 1984 (Yugoslavia) was there a close enough significant effect to early years.
     * Hence, there is empirical evidence to support this statement in some cases, but it is not consistent/significant enough to certify a relationship with being a host and excelling at the Olympics for countries.
 
-___Multivariate exploration___
+___Multivariate Exploration___
 
 
 Finally from my multivariate exploration, extending from the Height and Weight relationship, I utilised a scatter plot to see how Age varies with respect to these two variables.
@@ -76,14 +76,31 @@ Finally from my multivariate exploration, extending from the Height and Weight r
 
 ## Key Insights for Presentation
 
-For the presentation, I focus mainly on the participation proportions/counts, personal attributes of athletes and performance (medals counts) in the Olympics over time only for host cities/countries - not entirely focussed on the dynamics between athletes by Sex or Season of the events when it comes to medal performance per se.
-I start by introducing the proportion of Male and Female athletes competing at the Olympics, followed by the the proportion of Olympic events by season. I finish off the proportion (univariate) analysis by finding out the different proportions between standard competitors and medalists and then by the medals earned exclusively through pie charts.
-Moving to the Bivariate analysis, I then start looking at the relationships between the numeric variables surrounding personal attributes via Weight on Height through a fitted (linear model) estimated regression with Weight defined by a log scale. This is further complemented by a `Histogram (Hist2d) Heatmap`, which shows the density of groupings for athletes by Weight (log scale) and Height. This is followed by illustrating descriptive statistics and analysis of the distribution of personal attributes athletes exhibited when competing via the `violinplot`, uncovering summary statistics like the median Height, Age and Weight for athletes by each medal group (standard competitors i.e. None or medalists). The bivariate analysis is closed via the analysis of average medals earned based on different Host cities for each Season of the Olympics. The Summer Olympic events ran from Athens 1896 to Rio de Janiero 2016. The Winter Olympic events ran from Chamonix 1924 to Sochi 2014. This was visualised to search for the so-called 'Host advantage'.
+___Univariate Analysis___
+
+I focus mainly on:
+
+* Participation proportions/counts.
+* Performance (medals proportions/counts) in the Olympics by medal winners and standard competitors.
+
+I start by introducing the proportion of Male and Female athletes competing at the Olympics, followed by the the proportion of Olympic events by season. I finish off the univariate analysis by finding out the different proportions between standard competitors and medalists and then by the medals earned exclusively through pie charts.
+
+___Bivariate Analysis___
+
+Moving to the Bivariate analysis, I then start looking at the relationships between:
+
+* Numeric variables - surrounding personal attributes via Weight on Height through a fitted (linear model) estimated regression with Weight defined by a log scale.  
+    * This is further complemented by a `Histogram (Hist2d) Heatmap`, which shows the density of groupings for athletes by Weight (log scale) and Height.
+* This is followed by illustrating descriptive statistics and analysis of the distribution of personal attributes athletes exhibited when competing via the `violinplot`, uncovering summary statistics like the median Height, Age and Weight for athletes by each medal group (standard competitors i.e. None or medalists).
+* The bivariate analysis is closed via the analysis of average medals earned based on different Host cities for each Season of the Olympics over time. The Summer Olympic events ran from Athens 1896 to Rio de Janiero 2016. The Winter Olympic events ran from Chamonix 1924 to Sochi 2014. This was visualised to search for the so-called 'Host advantage'.
+
+___Multivariate Analysis___
+
 Finally, the presentation ends through the multivariate analysis, which uncovers the median estimates of personal attributes - Age, Height and Weight - categorised both by medalists and sex.
 
 The visual encodings I considered to use when polishing my plots:
 * Titles, x and y labels - use of bold text via `font weight`
-- Annotations - used for clarity, especially when illustrating proportions precisely, while quickly showing summary statistics like the correlation coefficient. These also include legends to distinguish by categories and the way quartiles are shown through the violinplot
+- Annotations - used for clarity, especially when illustrating proportions precisely, while quickly showing summary statistics like the correlation coefficient. These also include legends to distinguish by categories and the way quartiles are shown through the violinplot.
 - Colour - for significance such as depicting the colours of medals when presenting the pie chart. Also considering the right colour palette in case of colour blind viewers as in the personal attributes analysed among two categories, along with different shadings to determine hotspots among the Heatmap.
 
 ## Feedback
