@@ -87,12 +87,12 @@ I start by introducing the proportion of Male and Female athletes competing at t
 
 ___Bivariate Analysis___
 
-Moving to the Bivariate analysis, I then start looking at the relationships between:
+Moving to the bivariate analysis, I then start looking at the relationships between:
 
 * Numeric variables - surrounding personal attributes via Weight on Height through a fitted (linear model) estimated regression with Weight defined by a log scale.  
     * This is further complemented by a `Histogram (Hist2d) Heatmap`, which shows the density of groupings for athletes by Weight (log scale) and Height.
 * This is followed by illustrating descriptive statistics and analysis of the distribution of personal attributes athletes exhibited when competing via the `violinplot`, uncovering summary statistics like the median Height, Age and Weight for athletes by each medal group (standard competitors i.e. None or medalists).
-* The bivariate analysis is closed via the analysis of average medals earned based on different Host cities for each Season of the Olympics over time. The Summer Olympic events ran from Athens 1896 to Rio de Janiero 2016. The Winter Olympic events ran from Chamonix 1924 to Sochi 2014. This was visualised to search for the so-called 'Host advantage'.
+* The bivariate analysis is closed via the analysis of average medals earned based on different Host cities for each Season of the Olympics over time. This data set contains Summer Olympic events between Athens 1896 to Rio de Janiero 2016, while the Winter Olympic events are listed from Chamonix 1924 to Sochi 2014. This was visualised to search for the so-called 'Host advantage'.
 
 ___Multivariate Analysis___
 
@@ -101,8 +101,19 @@ Finally, the presentation ends through the multivariate analysis, which uncovers
 The visual encodings I considered to use when polishing my plots:
 * Titles, x and y labels - use of bold text via `font weight`
 - Annotations - used for clarity, especially when illustrating proportions precisely, while quickly showing summary statistics like the correlation coefficient. These also include legends to distinguish by categories and the way quartiles are shown through the violinplot.
-- Colour - for significance such as depicting the colours of medals when presenting the pie chart. Also considering the right colour palette in case of colour blind viewers as in the personal attributes analysed among two categories, along with different shadings to determine hotspots among the Heatmap.
+- Colour - for significance such as depicting the colours of medals when presenting the pie chart. Also considering the right colour palette in case of colour blind viewers as in the personal attributes analysed among two categories, along with different shadings to determine hotspots among the heatmap.
 
-## Feedback
+### Feedback
 
 I would like to thank my peers/mentor for all the observations, commendations and recommendations, mainly what to include and exclude for my explanatory presentation.
+
+### References
+
+Beyond my Udacity mentor, peers and lectures, I consulted a number of resources including:
+
+* [DataCamp - Introduction to Data Visualization with Python](<https://www.datacamp.com/courses/introduction-to-data-visualization-with-python>)
+* [DataCamp - Manipulating DataFrames with pandas](<https://www.datacamp.com/courses/manipulating-dataframes-with-pandas>)
+    * This tutorial was very useful, as it provided a case study/example to follow and utilise for my analysis by building a host DataFrame for Olympic host cities using a similar Olympics dataset. This allowed me to answer whether there was a host advantage over various editions. See chapter 5.
+* [Medium - 5 Quick and Easy Data Visualizations in Python with Code](<https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f>)
+* [VanderPlas (2016) - Python Data Science Handbook, see chapter 4](<https://jakevdp.github.io/PythonDataScienceHandbook/>)
+*  [McKinney (2017) - Python for Data Analysis 2e, see chapter 9](https://wesmckinney.com/pages/book.html)
