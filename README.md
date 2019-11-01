@@ -21,6 +21,26 @@ For the **Medal** (ordinal) category, missing medals were there to signify stand
 M and F should be fully spelled out to represent Male and Female respectively.
 * Missing observations that were related between two tables that anticipated a left join - Athletes information should be preserved while connecting the National Olympic Committee (NOC) - the joining key - table for each Team that also identifies the region. Additionally, this meant additional cleaning to make sure **all** the regions were accounted for. Singapore had 5 different team names under the same NOC, which needed to be updated along with others.
 
+___Data Dictionary___
+
+Taking the cleaned dataset **olympics-master.csv**, these are the columns that were available for analysis. You can see this [here](<https://docs.google.com/spreadsheets/d/1uxtOJlmtZoJeuFNiVbE_RFvUw1tiMeS6f9oUWy_6t8Y/edit?usp=sharing>) based on my evaluations of the most important factors that needed to be clean for data visualisation.
+
+* __ID__ - Unique number for each athlete to be tracked, be it at a single Olympics year or across multiple editions.
+* __Name__ - Athlete's name
+* __Sex__ - Male and Female
+* __Age__ - Integer
+* __Height__ - In centimetres (cm)
+* __Weight__ - In kilograms (kg)
+* __Team__ - Team name
+* __NOC__ - National Olympic Committee 3-letter code
+* __Games__ - Year and season
+* __Year__ - Integer
+* __Season__ - Summer or Winter
+* __City__ - Host city
+* __Sport__ - Sport
+* __Event__ - Event
+* __Medal__ - Gold, Silver, Bronze and None (standard competitors)
+
 
 ## Summary of Findings
 
