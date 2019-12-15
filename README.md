@@ -14,7 +14,7 @@ There were 271,116 observations (rows) about athletes surrounding the biographic
 The dataset can be found on Kaggle. The data was scraped from [sport-reference](https://www.sports-reference.com) by the user **rgriffin**, which is made available on [kaggle](https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results). There are also kernels with relevant documentation and examples.
 
 Despite prior scraping and wrangling, there were inconsistencies I needed to correct to make this analysis functional. These included:
-* Null values - **Age, Weight and Height** information were not able to recorded at times.
+* Null values - **Age, Weight and Height** information were *not* able to be recorded at times.
 For the **Medal** (ordinal) category, missing medals were there to signify standard competitors (None) rather than NAN as not everyone that competed qualified for a medal.
 * Misspelled Host City names - instances included Athina to Athens and Sankt Moritz to St. Moritz.
 * Data types - Medal (ordinal), Sex and Season (nominal) should have been classed as categories rather than the default strings when imported.
